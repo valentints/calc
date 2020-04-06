@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="logo">
+            Gurarda
+            <span class="tu">TU</span>
+            plata
+        </div>
+        <div class="open">
+            <button class="start" id="start">Iniciar calculos</button>
+        </div>
+        <div class="title">
+            Calular gastos cotidianos
+        </div>
+        <div class="main">
+            <div class="data">
+                <div class="choose-expenses">Gastos obligatorios</div>
+                <input class="expenses-item" type="text" id="expenses_1" placeholder="nombre">
+                <input class="expenses-item" type="text" id="expenses_2" placeholder="precio">
+                <input class="expenses-item" type="text" id="expenses_3" placeholder="nombre">
+                <input class="expenses-item" type="text" id="expenses_4" placeholder="precio">
+                <button class="expenses-item-btn">confirmar</button>
+
+                <div class="optionalexpenses">Gastos extraordinarios</div>
+                <input class="optionalexpenses-item" type="text" id="optionalexpenses_1">
+                <input class="optionalexpenses-item" type="text" id="optionalexpenses_2">
+                <input class="optionalexpenses-item" type="text" id="optionalexpenses_3">
+                <button class="optionalexpenses-btn">agregar</button>
+
+                <div class="count-budget">Gastos diarios</div>
+                <button class="count-budget-btn">CAlCULAR</button>
+
+                <div class="choose-income-label">ponen su extra ganancia </div>
+                <input class="choose-income" type="text" id="income">
+
+                <div class="checksavings">Si tenes dinero en el banco
+                    <input id="savings" type="checkbox" />
+                </div>
+                <label for="sum">Сandidat</label>
+                <input class="choose-sum" id="sum" type="text">
+                <label for="percent">porcentaje </label>
+                <input class="choose-percent" id="percent" type="text">
+
+
+            </div>
+            <div class="result">
+                <div class="result-table">
+                    <div class="budget">Ganansia: </div>
+                    <div class="budget-value"></div>
+
+                    <div class="daybudget">el presupuesto por un dia: </div>
+                    <div class="daybudget-value"></div>
+
+                    <div class="level">nivel de ganancia </div>
+                    <div class="level-value"></div>
+
+                    <div class="expenses">gastos obligatorios: </div>
+                    <div class="expenses-value"></div>
+
+                    <div class="optionalexpenses">Gastos posibles: </div>
+                    <div class="optionalexpenses-value"></div>
+
+                    <div class="income">gastos extras </div>
+                    <div class="income-value"></div>
+
+                    <div class="monthsavings">acumulación mensual:</div>
+                    <div class="monthsavings-value"></div>
+
+                    <div class="yearsavings">acumulación anual:</div>
+                    <div class="yearsavings-value"></div>
+                </div>
+                <div class="time-data">
+                    <div class="year">
+                        año:
+                        <input class="year-value" type="text" readonly>
+                    </div>
+                    <div class="month">
+                        mess:
+                        <input class="month-value" type="text" readonly>
+                    </div>
+                    <div class="day">
+                        dia:
+                        <input class="day-value" type="text" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
